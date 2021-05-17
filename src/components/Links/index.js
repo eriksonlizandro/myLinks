@@ -1,30 +1,52 @@
 import React, { useContext } from "react"
 import MyLinksContext from "../../context/context"
-import { LinkWrapper, Button } from "./styles"
+import { LinkWrapper, Button, FadeButtons } from "./styles"
+import { FaRegHeart } from "@react-icons/all-files/fa/FaRegHeart"
 
 export function Links() {
   const { links } = useContext(MyLinksContext)
   const { myLinks } = links
+
   return (
     <section id="links">
       {myLinks &&
-        myLinks.map(myLink => {
-          const { id, name, url } = myLink
-          return (
+        myLinks.map((link, idx) =>
+          idx === 0 ? (
+            <LinkWrapper>
+              <FadeButtons
+                key={`link-${link.id}`}
+                href={link.url}
+                rel="noopener noreferrer"
+                className="myLinks"
+                target="_blank"
+                aria-label={`link-${link.name}`}
+              >
+                <Button>
+                  <FaRegHeart />
+                  {` `}
+                  {link.name}
+                </Button>
+              </FadeButtons>
+            </LinkWrapper>
+          ) : (
             <LinkWrapper>
               <a
-                key={id}
-                href={url || ""}
+                key={`link-${link.id}`}
+                href={link.url}
                 rel="noopener noreferrer"
-                className='myLinks'
+                className="myLinks"
                 target="_blank"
-                aria-label={name}
+                aria-label={`link-${link.name}`}
               >
-                <Button>{name}</Button>
+                <Button>
+                  <FaRegHeart />
+                  {` `}
+                  {link.name}
+                </Button>
               </a>
             </LinkWrapper>
           )
-        })}
+        )}
     </section>
   )
 }

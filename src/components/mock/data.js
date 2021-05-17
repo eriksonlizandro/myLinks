@@ -12,22 +12,22 @@ export const linksData = {
   myLinks: [
     {
       id: uuidv1(),
-      name: "OnlyFans",
+      name: `OnlyFans`,
       url: "https://onlyfans.com/forespiritnon",
     },
     {
       id: uuidv1(),
-      name: "Instagram",
+      name: `Twitter`,
+      url: "https://twitter.com/forespiritnon1 ",
+    },
+    {
+      id: uuidv1(),
+      name: `Instagram`,
       url: "https://www.instagram.com/forespiritnon/",
     },
     {
       id: uuidv1(),
-      name: "Twitter",
-      url: "https://twitter.com/forespiritnon1",
-    },
-    {
-      id: uuidv1(),
-      name: "Facebook",
+      name: `Facebook`,
       url: "https://www.facebook.com/jennyzzhao/",
     },
   ],

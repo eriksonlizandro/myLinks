@@ -5,10 +5,14 @@ import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 
 const StyledImg = styled(Img)`
-  clip-path: circle(42.8% at 50% 39%);
-  margin-top: 3rem; 
-  margin-bottom: -2rem; 
-`;
+  clip-path: circle(36% at 50% 33%);
+  margin-top: 2rem;
+  margin-bottom: -5rem;
+
+  @media screen and (max-width: 250px) {
+    align-items: left;
+  }
+`
 const ProfileImg = ({ filename, alt }) => (
   <StaticQuery
     query={graphql`
@@ -19,7 +23,7 @@ const ProfileImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 180) {
+                fixed(width: 190) {
                   ...GatsbyImageSharpFixed
                 }
               }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `@forespiritnon`,
     description: `Links for Bae`,
     author: `@eriksonlizandro`,
   },
@@ -14,6 +14,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Oxygen`,
+          `Oxygen Mono`,
+          `Great Vibes`,
+          `Lobster Two`,
+          `Rock Salt`, 
+          `Playball`,
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -25,7 +39,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `public/icons/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
