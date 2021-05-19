@@ -34,7 +34,7 @@ export const Button = styled.button`
     width: 95%;
   }
 `
-export const FadeButtons = styled.div`
+export const ShakeButton = styled.div`
   animation: 1s ${shakeIt} ;
   animation-delay: 0.5s; 
   animation-iteration-count: 5; 

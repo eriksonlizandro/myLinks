@@ -7,7 +7,7 @@ import { StaticQuery, graphql } from "gatsby"
 const StyledImg = styled(Img)`
   clip-path: circle(36% at 50% 33%);
   margin-top: 2rem;
-  margin-bottom: -5rem;
+  margin-bottom: -6rem;
 
   @media screen and (max-width: 250px) {
     align-items: left;

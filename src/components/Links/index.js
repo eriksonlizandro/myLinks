@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import MyLinksContext from "../../context/context"
-import { LinkWrapper, Button, FadeButtons } from "./styles"
+import { LinkWrapper, Button, ShakeButton } from "./styles"
 import { FaRegHeart } from "@react-icons/all-files/fa/FaRegHeart"
 
 export function Links() {
@@ -13,7 +13,7 @@ export function Links() {
         myLinks.map((link, idx) =>
           idx === 0 ? (
             <LinkWrapper>
-              <FadeButtons
+              <ShakeButton
                 key={`link-${link.id}`}
                 href={link.url}
                 rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function Links() {
                   {` `}
                   {link.name}
                 </Button>
-              </FadeButtons>
+              </ShakeButton>
             </LinkWrapper>
           ) : (
             <LinkWrapper>

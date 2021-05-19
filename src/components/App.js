@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Links, Layout, Profile, Bubbles } from "../components"
+import {Layout, Links, Profile, Bubbles } from "../components"
 import { MyLinksProvider } from "../context/context"
 
 import { linksData, profileData } from "../components/mock/data"
