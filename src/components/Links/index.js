@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import MyLinksContext from "../../context/context"
-import { LinkWrapper, Button, ShakeButton } from "./styles"
+import { LinkWrapper, Button} from "./styles"
 import { FaRegHeart } from "@react-icons/all-files/fa/FaRegHeart"
 import Shake from "react-reveal/Shake"
 
