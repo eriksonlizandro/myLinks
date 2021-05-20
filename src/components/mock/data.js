@@ -12,8 +12,8 @@ export const linksData = {
   myLinks: [
     {
       id: uuidv1(),
-      name: `Animated`,
-      url: "https://www.google.com/",
+      name: `OnlyFans`,
+      url: "https://onlyfans.com/forespiritnon",
     },
     {
       id: uuidv1(),

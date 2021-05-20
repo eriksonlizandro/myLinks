@@ -1,6 +1,6 @@
-import React from "react"
+import React, { createRef, useEffect } from "react"
 import Particles from "react-particles-js"
-import {BubbleWrapper} from './styles'
+import { BubbleWrapper } from "./styles"
 
 const bubblesOptions = {
   particles: {
@@ -55,9 +55,18 @@ const bubblesOptions = {
 }
 
 export function Bubbles() {
+  const bubbleHeight = createRef()
+  useEffect(() => {
+    bubbleHeight.current = window.outerHeight
+  }, [bubbleHeight])
+
   return (
     <BubbleWrapper>
-      <Particles className="bubbles" params={bubblesOptions} height={window.outerHeight} />
+      <Particles
+        className="bubbles"
+        params={bubblesOptions}
+        height={bubbleHeight.current}
+      />
     </BubbleWrapper>
   )
 }
