@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import {Title} from './styles'
 import MyLinksContext from "../../context/context"
 import ProfileImg from "../ProfileImg/index"
 
@@ -8,7 +9,7 @@ export function Profile() {
   return (
     <div>
       <ProfileImg alt="profile-picture" filename={img}/>
-      <h1>{profileName}</h1>
+      <Title>{profileName || 'Loading...'}</Title>
       <h4>{userName}</h4>
     </div>
   )

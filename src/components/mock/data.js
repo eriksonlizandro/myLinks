@@ -1,5 +1,10 @@
 import uuidv1 from "uuid/v1"
 
+//HEADDATA
+export const headData ={
+  title: "forespiritnon",
+}
+
 //PROFILE NAME
 export const profileData = {
   profileName: "Jenny Zhao",
