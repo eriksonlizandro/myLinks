@@ -47,7 +47,7 @@ module.exports = {
         short_name: `forespiritnon`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#faaca8`,
+        theme_color: `#252525`,
         display: `standalone`,
         icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
