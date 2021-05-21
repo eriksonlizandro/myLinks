@@ -9,7 +9,7 @@ export function Profile() {
   return (
     <div>
       <ProfileImg alt="profile-picture" filename={img}/>
-      <Title>{profileName || 'Loading...'}</Title>
+      <Title>{profileName}</Title>
       <h4>{userName}</h4>
     </div>
   )
