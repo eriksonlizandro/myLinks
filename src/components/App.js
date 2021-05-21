@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import {Layout, Links, Profile, Bubbles } from "../components"
+import { Layout, Links, Profile, Bubbles } from "../components"
 import { MyLinksProvider } from "../context/context"
 
 import { linksData, profileData } from "../components/mock/data"
@@ -14,13 +14,13 @@ function App() {
   }, [])
 
   return (
-    <MyLinksProvider value={{ links, profile }}>
-      <Layout>
+    <Layout>
+      <MyLinksProvider value={{ links, profile }}>
         <Profile />
         <Links />
-      </Layout>
-      <Bubbles />
-    </MyLinksProvider>
+        <Bubbles />
+      </MyLinksProvider>
+    </Layout>
   )
 }
 

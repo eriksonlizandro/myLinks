@@ -7,6 +7,7 @@ export const LinkWrapper = styled.div`
 export const Button = styled.button`
   padding: 16px;
   width: 50%;
+  background-color: white;
   text-decoration: none;
   font-weight: 450;
   border: solid black;
