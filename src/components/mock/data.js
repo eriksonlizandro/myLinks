@@ -17,8 +17,8 @@ export const linksData = {
   myLinks: [
     {
       id: uuidv1(),
-      name: `OnlyFans`,
-      url: "https://onlyfans.com/forespiritnon",
+      name: `Only-Me`,
+      url: "http://www.dereferer.org/?https%3A%2F%2Fonlyfans%2Ecom%2Fforespiritnon",
     },
     {
       id: uuidv1(),
