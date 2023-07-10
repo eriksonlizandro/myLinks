@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Layout, Links, Profile, Bubbles } from "../components"
+import { Layout, Links, Profile } from "../components"
 import { MyLinksProvider } from "../context/context"
 
 import { linksData, profileData } from "../components/mock/data"
@@ -18,7 +18,6 @@ function App() {
       <MyLinksProvider value={{ links, profile }}>
         <Profile />
         <Links />
-        <Bubbles />
       </MyLinksProvider>
     </Layout>
   )
