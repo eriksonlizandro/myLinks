@@ -17,8 +17,13 @@ export const linksData = {
   myLinks: [
     {
       id: uuidv1(),
-      name: `Only-Me`,
+      name: `Onlychans`,
       url: "https://onlyfans.com/forespiritnon",
+    },
+    {
+      id: uuidv1(),
+      name: `TikTok`,
+      url: "https://www.tiktok.com/@foresfaiiry",
     },
     {
       id: uuidv1(),
